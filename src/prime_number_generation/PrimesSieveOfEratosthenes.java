@@ -13,6 +13,7 @@ public class PrimesSieveOfEratosthenes {
     }
 
     public List<Integer> getPrimesWithSieveOfEratosthenes(int maxNoChecked) {
+        //length of the array + 1 because we do want to check the maxNoChecked (and it's an exclusive bound)
         boolean[] primeChecks = new boolean[maxNoChecked + 1];
         //fill check array with all true values and falsify as you eliminate candidates as composite numbers
         Arrays.fill(primeChecks, true);
