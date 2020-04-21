@@ -1,7 +1,7 @@
 package prime_number_generation;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class PrimesSieveOfEratosthenes {
@@ -34,7 +34,7 @@ public class PrimesSieveOfEratosthenes {
 
         //add indexes of all the true values in primeChecks as prime integers in the list
         //which to return to the caller
-        List<Integer> primes = new LinkedList<>();
+        List<Integer> primes = new ArrayList<>();
 
         for (int i = 2; i <= maxNoChecked; i++) {
             if (primeChecks[i])

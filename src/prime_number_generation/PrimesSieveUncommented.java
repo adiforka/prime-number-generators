@@ -1,7 +1,7 @@
 package prime_number_generation;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class PrimesSieveUncommented {
@@ -15,7 +15,6 @@ public class PrimesSieveUncommented {
     public List<Integer> getPrimesWithSieveOfEratosthenes(int maxNoChecked) {
 
         boolean[] primeChecks = new boolean[maxNoChecked + 1];
-
         Arrays.fill(primeChecks, true);
 
         for (int p = 2; p * p <= maxNoChecked; p++) {
@@ -26,7 +25,7 @@ public class PrimesSieveUncommented {
             }
         }
 
-        List<Integer> primes = new LinkedList<>();
+        List<Integer> primes = new ArrayList<>();
         for (int i = 2; i <= maxNoChecked; i++) {
             if (primeChecks[i])
                 primes.add(i);
