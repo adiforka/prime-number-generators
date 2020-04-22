@@ -1,4 +1,4 @@
-package prime_number_generation;
+package prime_number_generation.sieve_first_attempts;
 
 import java.util.List;
 import java.util.stream.Collectors;

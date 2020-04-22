@@ -1,4 +1,4 @@
-package prime_number_generation;
+package prime_number_generation.sieve_first_attempts;
 
 public class PrimeNumberPrinterDemo {
     public static void main(String[] args) {
